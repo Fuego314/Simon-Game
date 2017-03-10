@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+	<title>Simon</title>
+	<meta name="description" content="Simon Game">
+	<meta name="Author" content="Luke Tucker">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<!-- build:css css/styles.min.css -->
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link href="css/main.css" rel="stylesheet">
+	<!-- endbuild -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="gameboard">
+
+			<div id="stats-ops">
+
+		    <div id="round">Round: 0</div>
+
+				<div class="strict-holder">
+					<p>Strict Mode</p>
+					<div id="strict-mode" class="strict-wrap">
+				    <div class="strict-bg">
+				      <div class="button-off">&#8226;</div>
+				      <div class="button-on">&#8226;</div>
+				      <div class="strict-switch"></div>
+				    </div><!-- strict bg -->
+				  </div><!-- strict wrap -->
+		    </div><!-- strict holder -->
+
+				<div class="start-holder">
+				  <div id="start" class="start-wrap">
+				    <div class="start-bg">
+				      <div class="button-off">off</div>
+				      <div class="button-on">on</div>
+				      <div class="start-switch"></div>
+				    </div><!-- start bg -->
+				  </div><!-- start wrap -->
+				</div><!-- stort holder -->
+
+		  </div><!-- stats-ops -->
+
+			<div class="left">
+				<div class="topL game-btn"></div>
+				<div class="bottomL game-btn"></div>
+			</div><!-- left -->
+
+			<div class="right">
+				<div class="topR game-btn"></div>
+				<div class="bottomR game-btn"></div>
+			</div><!-- right -->
+
+		</div><!-- gameboard -->
+
+	</div><!-- container -->
+
+	<!--build:js js/main.min.js -->
+	<script src="js/babel/app.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

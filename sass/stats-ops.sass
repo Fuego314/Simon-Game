@@ -1,0 +1,182 @@
+#stats-ops
+  position: absolute
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  align-items: center
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  width: 180px
+  height: 180px
+  margin: auto
+  border-radius: 50%
+  background: #666
+  color: #111
+  box-shadow: 0px 0px 15px 7px black
+  z-index: 4
+  text-align: center
+  @media(min-width: 440px)
+    width: 250px
+    height: 250px
+  @media(min-width: 640px)
+    width: 300px
+    height: 300px
+#round
+  margin-top: .95em
+  @media(min-width: 440px)
+    margin-top: .6em
+
+// STRICT BUTTON
+.strict-holder
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0 .15em
+  padding-top: 5.5px
+  p
+    display: inline-block
+    margin: 0
+    margin-right: .35em
+.strict-wrap
+  display: inline-block
+  width: 60px
+  margin: 0
+  cursor: pointer
+  @media(min-width: 440px)
+    width: 67px
+  @media(min-width: 640px)
+    width: 84px
+  .strict-bg
+    width: 100%
+    height: 100%
+    padding: 3px
+    color: #ccc
+    border-radius: 40px
+    background-color: #222
+    transition: all 0.2s ease
+    .strict-switch
+      position: relative
+      left: 0px
+      width: 25px
+      height: 25px
+      border: solid 4px
+      border-radius: 36px
+      transition: all 0.2s ease
+      @media(min-width: 440px)
+        width: 32px
+        height: 32px
+        border: solid 5px
+      @media(min-width: 640px)
+        width: 40px
+        height: 40px
+        border: solid 8px
+    .button-on,
+    .button-off
+      position: absolute
+      top: -5.8px
+      font-size: 2.4em
+      font-weight: bold
+      transition: all 0.2s ease
+      @media(min-width: 440px)
+        font-size: 4.1rem
+        top: -16.7px
+      @media(min-width: 640px)
+        font-size: 4.65rem
+        top: -17.5px
+    .button-on
+      margin-left: 34.2px
+      @media(min-width: 440px)
+        margin-left: 33.2px
+      @media(min-width: 640px)
+        margin-left: 44.4px
+    .button-off
+      margin-left: 5.4px
+      color: #dd2222
+      @media(min-width: 440px)
+        margin-left: 4.5px
+      @media(min-width: 640px)
+        margin-left: 6.6px
+.strict-active
+  .button-off
+    color: #fff
+  .button-on
+    color: #22dd22
+  .strict-switch
+    left: 29px!important
+    @media(min-width: 640px)
+      left: 38px!important
+
+
+// START BUTTON
+.start-holder
+  .start-wrap
+    width: 110px
+    margin: 0 auto 1em
+    cursor: pointer
+    @media(min-width: 440px)
+      width: 119px
+    @media(min-width: 640px)
+      width: 136px
+    .start-bg
+      width: 100%
+      height: 100%
+      padding: 3px
+      border-radius: 40px
+      color: #ccc
+      background-color: #222
+      transition: all 0.2s ease
+      .start-switch
+        position: relative
+        left: 0px
+        width: 52px
+        height: 32px
+        border: solid 6px
+        border-radius: 36px
+        transition: all 0.2s ease
+        @media(min-width: 440px)
+          width: 61px
+          height: 45px
+          border: solid 8px
+        @media(min-width: 640px)
+          width: 73px
+          height: 55px
+          border: solid 11px
+      .button-off,
+      .button-on
+        position: absolute
+        transition: all 0.2s ease
+        padding-top: 8px
+        font-size: .8em
+        text-transform: uppercase
+        font-weight: 700
+        @media(min-width: 440px)
+          font-size: 1.1rem
+          padding-top: 11.5px
+        @media(min-width: 640px)
+          padding-top: 17px
+      .button-on
+        margin-left: 69px
+        @media(min-width: 440px)
+          margin-left: 70px
+        @media(min-width: 640px)
+          margin-left: 79px
+      .button-off
+        margin-left: 12px
+        color: #dd2222
+        @media(min-width: 440px)
+          margin-left: 14px
+        @media(min-width: 640px)
+          margin-left: 18px
+
+.start-active
+  .start-switch
+    left: 52px!important
+    @media(min-width: 640px)
+      left: 57px!important
+  .button-off
+    color: #fff
+  .button-on
+    color: #22dd22
